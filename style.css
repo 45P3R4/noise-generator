@@ -1,0 +1,106 @@
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: rgb(38, 38, 43);
+    color: rgb(161, 161, 161);
+    text-shadow: 1px 1px 3px black;
+}
+
+pre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+}
+
+h2 {
+    margin: 0;
+    align-self: flex-start;
+    grid-area: h;
+}
+
+button {
+    height: 60px;
+    width: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    box-shadow: 1px 1px 1px black;
+    background-color: rgb(38, 38, 43);
+    color: gray;
+    border: none;
+    border-radius: 5px;
+    grid-area: b;
+}
+
+button:hover {
+    background-color: rgb(27, 28, 31);
+    cursor: pointer;
+}
+
+input {
+    box-shadow: 1px 1px 1px black;
+    max-width: 70px;
+    height: 60px;
+    background-color: rgb(100, 100, 100);
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    appearance: textfield;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    grid-area: i;
+}
+
+input:active {
+    border: none;
+    text-decoration: none;
+}
+
+.size input {
+    height: 40px;
+}
+
+canvas {
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    margin: 40px auto;
+}
+
+.main-cnt {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+.setting {
+    display: flex;
+    flex-wrap: wrap;
+    width: 330px;
+    height: 230px;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: rgb(84, 84, 87);
+}
+
+.empty {
+    width: 100%;
+}
+
+.desc {
+    grid-area: d;
+}
+
+.label {
+    grid-area: l;
+}

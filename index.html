@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noise</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<header>
+
+</header>
+<body>
+    <div class="main-cnt">
+        <canvas id="canvas" width="128" height="128"></canvas>
+        <div class="settings">
+            <div class="setting">
+                <h2>Canvas Size</h2>
+                <pre class="desc">
+minimum: <strong>1 x 1</strong>
+maximum: <strong>1024 x 1024</strong>
+default: <strong>128 x 128</strong>
+</pre>
+                <div class="empty"></div>
+                <button id="size-btn">Change</button>
+                <input type="number" name="width" id="width"    placeholder="width">
+                <input type="number" name="height" id="height"  placeholder="height">
+            </div>
+
+            <div class="setting">
+                <h2>Simple Noise</h2>
+                <div class="desc">Noise with grayscale colors</div>
+                <div class="empty"></div>
+                <button id="white-btn">Generate</button>
+                <input type="number" name="max" id="max" placeholder="max">
+                <input type="number" name="min" id="min" placeholder="min">
+            </div>
+
+            <div class="setting">
+                <h2>Perlin Noise</h2>
+                <div class="empty"></div>
+                <div class="desc">Perlin noise</div>
+                <div class="empty"></div>
+                <button id="perlin-btn">Generate</button>
+                <input type="number" name="zoom" id="zoom" placeholder="zoom">
+                <input type="number" name="blur" id="blur" placeholder="blur">
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<script src="./main.js"></script>
+</html>
